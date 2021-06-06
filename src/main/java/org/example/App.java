@@ -11,6 +11,7 @@ public class App {
 
     public static void main(String[] args) {
         App app = new App();
+
         app.processInterest(scanner);
     }
 
@@ -29,8 +30,8 @@ public class App {
         System.out.println("Enter the number of years:");
         years = Integer.parseInt(scanner.nextLine());
 
-        total=  (principle*(1+years*interest*0.01f));
-        System.out.printf("After %d years at %.2f%%, the investment will be worth $%.2f.",years,interest,total);
+        total = (principle * (1 + years * interest * 0.01f));
+        System.out.printf("After %d years at %.2f%%, the investment will be worth $%.2f.", years, interest, total);
 
     }
 }
